@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script type="text/javascript" src="../processing.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+        <script> 
+            $(function(){
+              $("#includedContent").load("../base.html"); 
+            });
+        </script> 
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <div>
+            <canvas data-processing-sources="Mijneveger.pde"></canvas>
+        </div>
+        <div class='explanation'>
+            <b>Interactive: </b> <br><br>
+            <b>Mouse:</b> Click on a tile to check the square<br><br>
+            <b>Key:</b> Color the selected square red<br><br>
+            Classic Minesweep: avoid the bombs
+        </div>
+    </body>
+    <script type="text/javascript">
+    </script>
+</html>

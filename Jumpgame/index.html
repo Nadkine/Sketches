@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script type="text/javascript" src="../processing.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+        <script> 
+            $(function(){
+              $("#includedContent").load("../base.html"); 
+            });
+        </script> 
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <div>
+            <canvas data-processing-sources="JumpGame.pde"></canvas>
+        </div>
+        <div class='explanation'>
+            <b>Interactive: </b> <br><br>
+            <b>Spacebar:</b> Jump up to 3 times<br><br>
+            The goal is for the ball to avoid the walls. The longer you manange to avoid those, the more points.
+        </div>
+    </body>
+    <script type="text/javascript">
+    </script>
+</html>
