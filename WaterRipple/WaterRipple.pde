@@ -13,12 +13,10 @@
        for (int i = 0; i < width; i++){
            for (int j = 0; j < height; j++){  
                 bufferOld[i][j] = 0;
-                bufferNew[i][j] = 0;
-                
-                         
+                bufferNew[i][j] = 0;           
              }
       }
-      }
+}
   
   
   public void draw(){
@@ -36,10 +34,6 @@
       bufferNew = bufferOld;
       bufferOld = temp;
       updatePixels();
-      
-              if (Math.random()*100<5){
-                  bufferNew[(int)(Math.random()*width)][(int)(Math.random()*height)] = 125;
-              }
       
   }
 

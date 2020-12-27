@@ -14,7 +14,6 @@
     
    public void draw (){
        if(balls.size() < 10){
-            console.log("STUCK");
             foto.resize(600,600);
             foto.filter(THRESHOLD, 0.7); 
             foto.loadPixels();

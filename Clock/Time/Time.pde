@@ -19,7 +19,6 @@ public void draw() {
   //uren
   stroke(100,255,255);
   makeCircle(hour()%12,12,0.5f);
-  console.log(second())
 }
 
 public void makeCircle(int aantal, int max_aantal, float magnifier) {
@@ -27,4 +26,3 @@ public void makeCircle(int aantal, int max_aantal, float magnifier) {
   arc(clocksize,clocksize,magnifier*clocksize,magnifier*clocksize,quarterTurn, length + quarterTurn);
   
 } 
-
