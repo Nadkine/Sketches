@@ -10,11 +10,9 @@ int score;
 int lives;
 float indention = 1;
 int highscore;
-PrintWriter output;
 void setup(){
   size(600,600);
-  highscore = int(loadStrings("highscore.txt")[0]);
-  boardSizeArray = new int[]{4,4,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8};
+  boardSizeArray = new int[]{4,4,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8};
   reset();
 }
 
@@ -53,7 +51,6 @@ void draw(){
     if(lives > 1){
       text('X',width-75,50);
     }
-    text(highscore,50,height-70);
 }
 
 void nextLevel(){
@@ -99,13 +96,6 @@ void mousePressed(){
     if(!board.get(j+i*boardSize).toBePicked){
       lives++;
       if (lives > 2){
-        if (score > highscore){
-          highscore = score;
-          
-          output = createWriter("highscore.txt"); 
-          output.println(score);
-          output.flush(); // Writes the remaining data to the file
-        }
         reset();
       }
     }else{
