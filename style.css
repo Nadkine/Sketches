@@ -1,0 +1,37 @@
+pre {
+    background-color: #000;
+    padding: 15px;
+}
+
+#theCanvas {
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    padding: 5px;
+    margin: 3px;
+    background-color: #F7920B;
+
+}
+body{
+    background-color:#000;
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+}
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.explanation{
+    color:white;
+}
